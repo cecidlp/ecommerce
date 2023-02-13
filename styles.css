@@ -1,0 +1,153 @@
+body {
+    background-color: #F5EBE0;
+    margin: 0;
+
+}
+
+
+hr.solid {
+    border-top: 2px solid #707070;
+}
+
+h1 {
+    font-family: "Quattrocento";
+    font-weight: 200;
+    color: white;
+    opacity: 70%;
+}
+
+h2 {
+    font-family: "Quattrocento";
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+input {
+    border: none;
+    background: transparent;
+    font-family: "Source Sans Pro";
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    color: white;
+    opacity: 70%;
+}
+
+header {
+    width: 100vw;
+    height: 50rem;
+    background: url("./public/the-revolt_web.jpg") no-repeat center;
+    background-size: cover;
+
+}
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.header-nav > a {
+        text-decoration: none;
+        font-family: "Source Sans Pro";
+        color: white;
+        opacity: 70%;
+}
+
+.bag-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    opacity: 70%;
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 9%;
+    text-align: center;
+}
+
+.intro-title {
+    font-family: "Quattrocento";
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.intro-p {
+    font-family: "Source Sans Pro";
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.discover-title {
+    display: flex;
+    justify-content: center;
+}
+
+.products-grid-container {
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.card-image {
+    width: 25rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.product-description {
+    font-family: "Source Sans Pro";
+    color: #2C2C2C;
+
+}
+
+.product-price {
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: row;
+    margin: 4% 5%;
+    justify-content: space-between;
+
+
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer-column>h3 {
+    font-family: "Source Sans Pro";
+    color: #2C2C2C;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer-column>a {
+    text-decoration: none;
+    font-family: "Source Sans Pro";
+    color: #2C2C2C
+}
