@@ -1,9 +1,12 @@
+/*index*/
 body {
     background-color: #F5EBE0;
-    margin: 0;
+    display: flex; 
+    flex-direction: column; 
+    max-width:100vw;
+    margin: 0 auto;
 
 }
-
 
 hr.solid {
     border-top: 2px solid #707070;
@@ -22,12 +25,18 @@ h2 {
     font-size: 3rem;
 }
 
+
 input {
     border: none;
     background: transparent;
     font-family: "Source Sans Pro";
     font-size: 1rem;
     text-transform: uppercase;
+    border-bottom: 1px solid grey;
+}
+
+input:focus {
+    outline: none;
 }
 
 ::placeholder {
@@ -35,7 +44,7 @@ input {
     opacity: 70%;
 }
 
-header {
+#index-page {
     width: 100vw;
     height: 50rem;
     background: url("./public/the-revolt_web.jpg") no-repeat center;
@@ -44,26 +53,18 @@ header {
 }
 
 
-.header-nav {
+.header-nav-index {
     display: flex;
     align-items: center;
     justify-content: space-around;
 
 }
 
-.header-nav > a {
-        text-decoration: none;
-        font-family: "Source Sans Pro";
-        color: white;
-        opacity: 70%;
-}
-
-.bag-link {
-    font-size: 1rem;
-    text-transform: uppercase;
+.header-nav-index > a {
+    text-decoration: none;
+    font-family: "Source Sans Pro";
     color: white;
     opacity: 70%;
-
 }
 
 .intro {
@@ -94,8 +95,8 @@ header {
 
 .products-grid-container {
     display: flex;
-    margin: 5%;
-    justify-content: space-between;
+    margin: 4% 0%;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
 }
@@ -150,4 +151,135 @@ header {
     text-decoration: none;
     font-family: "Source Sans Pro";
     color: #2C2C2C
+}
+
+.bag-link-index {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    opacity: 70%;
+
+}
+
+/*search page*/
+
+
+.header-nav > h1 {
+    font-family: "Quattrocento";
+    font-weight: 200;
+    color: black;
+    opacity: 70%;
+}
+
+.header-nav > ::placeholder {
+    color: black;
+    opacity: 70%;
+}
+
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.header-nav > a {
+    text-decoration: none;
+    font-family: "Source Sans Pro";
+    color: black;
+    opacity: 70%;
+}
+
+.bag-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+    opacity: 70%;
+
+}
+
+.results {
+    font-family: "Source Sans Pro";
+    color: "black";
+    opacity: 70%;
+    font-weight: bold;
+    margin: 1% 3%; 
+}
+
+/*shopping cart*/
+
+.cart-categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: "Quattrocento";
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.individual-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Quattrocento";
+    font-size: 1rem;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.product-cart-image{
+    height: 15rem;
+    margin: 1rem 0rem;
+   
+}
+
+.checkout > p {
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    opacity: 90%;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0% 15%;
+    
+
+}
+
+.counter {
+    width: 3rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content:  flex-end;
+   
+}
+.counter input {
+    width: 3rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    background: white;
+    font-family: "Source Sans Pro";
+    border-radius: 0.3rem;
+}
+.counter span {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    color: black;
+    user-select: none;
 }
