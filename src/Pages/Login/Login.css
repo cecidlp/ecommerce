@@ -2,6 +2,12 @@
     background-color: var(--preto-05);    
 }
 
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .logindetails{
     display: flex;
     flex-direction: column;
@@ -60,20 +66,28 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+    form{
+        gap:20px;
+    }
+
     .logindetails{
         height: 400px;
         gap: 20px;
     }
 
     .login-input{
-        width: 60%;
-        height: 10%;
+        width: 15rem;
+        height: 2.5rem;
         font-size: 14px;
+    }
+
+    .login-input::placeholder{
+        padding-left: 12px;
     }
 
     button{
         width: 30%;
-        height: 10%;
+        height: 2.5rem;
         font-weight: 600;
         font-size: 15px;
     }
