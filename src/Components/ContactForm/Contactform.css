@@ -93,4 +93,45 @@
     width: 50%;
     font-size: 14px;
     height: 3rem;
+    font-weight: 400;
+  }
+
+  @media (max-width: 600px) {
+    .container-contact{
+      height: auto;
+      padding: 20px;
+    }
+
+    .wrapper-contact{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .wrapper-contact img{
+      width: 90%;
+      padding-bottom: 15px;
+    }
+
+    .links p{
+      padding: 3px 0;
+      text-align: center;
+    }
+
+    .contact-form{
+      width: 100%;
+      padding-top: 15px;
+    }
+
+    .contact-form h2{
+      margin: 0;
+    }
+
+    .contact-form textarea{
+      height: 5rem;
+    }
+
+    .contact-button{
+      font-weight: 400;
+      width: 40%;
+    }
   }
