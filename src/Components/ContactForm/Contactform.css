@@ -39,13 +39,11 @@
 
 
 .full-input {
-    display: inline-block;
-    padding: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 4px;
-    height: 35px;
-
+    position: relative;
+    display: flex;
   }  
   
 
@@ -55,11 +53,16 @@
     display:block;
     line-height: 1.2em;
     font-size: 14px;
-    width: 100%;
-    margin-top: 3px;
     color: var(--preto-100);
+    padding: 25px 8px 8px 8px;
+    flex: 1;
+    border-radius: 4px;
+    border: 2px solid transparent;
   }
 
+  .contact-input:focus{
+    border: 2px solid var(--azul);
+  }
 
 
   .contact-label {
@@ -67,6 +70,9 @@
     font-size: 12px;
     color: var(--preto-50);
     font-size: 12px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
   }
 
   textarea{
@@ -77,12 +83,12 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 8rem;
     padding: 8px;
+    border: 2px solid transparent;
   }
 
   textarea::placeholder{
     color: var(--preto-50);
     font-size: 16px;
-    padding-top: 5px;
   }
 
   textarea:focus{
@@ -94,9 +100,17 @@
     font-size: 14px;
     height: 3rem;
     font-weight: 400;
+    background-color: var(--azul);
+    color: white;
+    border: none;
   }
 
-  @media (max-width: 600px) {
+  .contact-button:hover{
+    transform: scale(1.03);
+  }
+  
+
+  @media (min-width: 320px) and (max-width: 600px) {
     .container-contact{
       height: auto;
       padding: 20px;
@@ -115,6 +129,7 @@
     .links p{
       padding: 3px 0;
       text-align: center;
+      font-size: 14px;
     }
 
     .contact-form{
@@ -134,4 +149,5 @@
       font-weight: 400;
       width: 40%;
     }
+    
   }

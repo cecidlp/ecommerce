@@ -1,0 +1,120 @@
+.promo-container{
+    background-image: url('/images/hero.png');
+    background-position: center;
+    height: 20em;
+    padding: 5% 5% 5% 7%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.promo-title{
+    color: #ffff;
+    font-weight: 700;
+    font-size: 3.1em;
+    margin: 0;
+}
+
+.promo-text{
+    color: #ffff;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.promo-button{
+    width: 10em;
+    padding: 1.3em;
+    height: auto;
+    font-size: 1em;
+    font-weight: 400;
+    color: #ffff;
+    background-color: var(--azul);
+    border: none;
+}
+
+.promo-button:hover{
+    transform: scale(1.03);
+}
+
+.products-container{
+    margin: 5%;
+    gap: 1.8em;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.2em;
+
+}
+
+.products-container h2{
+    color: var(--preto-100);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3em 0em;
+  }
+
+  .title-container h2{
+    margin: 0;
+  }
+  
+  .see-all {
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--azul);
+    font-weight: 700;
+  }
+  
+  .see-all span {
+    top: 2px;
+    position: relative;
+    margin-left: 0.8em;
+    font-size: 1em;
+  }
+
+  @media (min-width: 320px) and (max-width: 600px){
+    .promo-title{
+        font-size: 1.5em;
+        text-shadow: 1px 2px 4px rgba(34, 34, 34, 0.5);
+    }
+
+    .promo-text{
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .promo-container {
+        height: auto;
+        padding: 15% 3% 8% 8%;
+        gap: 0.3em;
+    }
+
+    .promo-button {
+        padding: 1.1em;
+        font-size: 12px;
+    }
+
+    .products-container h2{
+        font-size: 1.3em;
+    }
+
+    .title-container{
+        padding: 1em 0em;
+    }
+    
+  }
+

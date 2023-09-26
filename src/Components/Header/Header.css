@@ -41,7 +41,7 @@ header{
     color: var(--preto-50);
   }
   
-  @media (max-width: 600px) {
+  @media (min-width: 320px) and (max-width: 600px) {
 
     header{
         padding: 0px 20px;
