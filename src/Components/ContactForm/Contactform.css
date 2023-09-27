@@ -110,7 +110,7 @@
   }
   
 
-  @media (min-width: 320px) and (max-width: 600px) {
+  @media (max-width: 600px) {
     .container-contact{
       height: auto;
       padding: 20px;

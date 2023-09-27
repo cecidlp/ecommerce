@@ -1,6 +1,3 @@
-.login{
-    background-color: var(--preto-05);    
-}
 
 .login-form{
     display: flex;
@@ -15,6 +12,7 @@
     justify-content: center;
     gap: 30px;
     height: 600px;
+    background-color: var(--preto-05);
 }
 
 .login-title{

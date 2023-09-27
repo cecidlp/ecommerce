@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import logo from '../../assets/Logo.png'
 import { AiOutlineSearch } from 'react-icons/ai'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
     <div>
       <header>
         <div className="logo">
-          <img src={logo} alt="" />
+          <Link to={'/'}><img src={logo} alt="" /></Link>
         </div>
         <div className="searchbar">
           <div className="search-container">

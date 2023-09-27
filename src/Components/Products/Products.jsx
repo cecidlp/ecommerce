@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Products.css'
 
-function Products({category, windowWidth}) {
+function Products({ category, windowWidth }) {
 
     const products = [
         {
             name: 'Stormtrooper mug',
-            img: '/images/storm-trooper.png',
+            img: '/images/storm-trooper.jpg',
             id: 1,
             price: 60,
             category: 'Star Wars'
@@ -20,111 +21,111 @@ function Products({category, windowWidth}) {
         },
         {
             name: 'Yoda figure',
-            img: '/images/yoda.png',
+            img: '/images/yoda.jpg',
             id: 3,
             price: 40,
             category: 'Star Wars'
         },
         {
             name: 'Stormtrooper figure',
-            img: '/images/muñeco-stormtrooper.png',
+            img: '/images/muñeco-stormtrooper.jpg',
             id: 4,
             price: 80,
             category: 'Star Wars'
         },
         {
             name: 'Baby Yoda toy',
-            img: '/images/baby-yoda.png',
+            img: '/images/baby-yoda.jpg',
             id: 5,
             price: 120,
             category: 'Star Wars'
         },
         {
-            name: 'Phantom Menace figure',
-            img: '/images/phantom.png',
+            name: 'Kylo Ren figure',
+            img: '/images/phantom.jpg',
             id: 6,
             price: 80,
             category: 'Star Wars'
         },
         {
             name: 'Xbox controller',
-            img: '/images/control-xyz-white.png',
+            img: '/images/control-xyz-white.jpg',
             id: 7,
             price: 110,
             category: 'Consoles'
         },
         {
             name: 'Playstation 5 with controller',
-            img: '/images/control-consola.png',
+            img: '/images/control-consola.jpg',
             id: 8,
             price: 700,
             category: 'Consoles'
         },
         {
             name: 'Nintendo NES',
-            img: '/images/nintendo.png',
+            img: '/images/nintendo.jpg',
             id: 9,
             price: 140,
             category: 'Consoles'
         }, {
             name: 'Nintendo switch controllers',
-            img: '/images/control-xyz.png',
+            img: '/images/control-xyz.jpg',
             id: 10,
             price: 80,
             category: 'Consoles'
         },
         {
             name: 'Xbox console',
-            img: '/images/consola-xyz.png',
+            img: '/images/consola-xyz.jpg',
             id: 11,
             price: 450,
             category: 'Consoles'
         },
         {
             name: 'Gameboy color',
-            img: '/images/gameboy.png',
+            img: '/images/gameboy.jpg',
             id: 12,
             price: 70,
             category: 'Consoles'
         },
         {
             name: 'Atari t-shirt',
-            img: '/images/remera.png',
+            img: '/images/remera.jpg',
             id: 13,
             price: 30,
             category: 'Others'
         },
         {
             name: 'SNES t-shirt',
-            img: '/images/camisa.png',
+            img: '/images/camisa.jpg',
             id: 14,
             price: 30,
             category: 'Others'
         },
         {
             name: 'Sonic toy',
-            img: '/images/sonic.png',
+            img: '/images/sonic.jpg',
             id: 15,
             price: 35,
             category: 'Others'
         },
         {
             name: 'Vintage radio and clock',
-            img: '/images/reloj.png',
+            img: '/images/reloj.jpg',
             id: 16,
             price: 80,
             category: 'Others'
         },
         {
             name: 'Virtual reality headset',
-            img: '/images/realidad-virtual.png',
+            img: '/images/realidad-virtual.jpg',
             id: 17,
             price: 120,
             category: 'Others'
         },
         {
             name: 'Pikachu costume',
-            img: '/images/pikachu.png',
+            img: '/images/pikachu.jpg',
             id: 18,
             price: 100,
             category: 'Others'
@@ -132,18 +133,19 @@ function Products({category, windowWidth}) {
     ]
 
     const maxProductsToShow = windowWidth < 850 ? 4 : products.length;
-    const filteredProducts = products.filter(product => product.category === category).slice(0,maxProductsToShow)
+    const filteredProducts = products.filter(product => product.category === category).slice(0, maxProductsToShow)
     return (
         <div className='category-products'>
             {filteredProducts.map(product => (
                 <div key={product.id} className='product-card'>
-                    <img src={product.img} alt={product.name} className='product-img'/>
+                    <img src={product.img} alt={product.name} className='product-img' />
                     <h3 className='product-name'>{product.name}</h3>
                     <p className='product-price'>${product.price},00 </p>
-                    <a href="">See product</a>
+                    <Link to={"/details/" + product.id}>See product</Link>
                 </div>
-            ))}
-        </div>
+    ))
+}
+        </div >
     )
 }
 
