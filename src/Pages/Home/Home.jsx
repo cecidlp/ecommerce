@@ -6,7 +6,6 @@ import Products from '../../Components/Products/products'
 
 
 const Home = () => {
-
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     useEffect(() => {
         const handleResize = () => {

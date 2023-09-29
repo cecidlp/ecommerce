@@ -1,0 +1,48 @@
+.searchTerm {
+    height: 20px;
+    border-radius: 20px;
+    background-color: var(--preto-05);
+    padding: 8px 15px;
+    width: 18rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--preto-50);
+    outline: none;
+    border: 3px solid var(--preto-05);
+    transition: border-color 0.3s;
+  }
+  
+  .searchTerm:focus{
+    border-color: var(--azul);
+  }
+
+  .search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .searchIcon {
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--preto-50);
+  }
+
+  @media (max-width: 600px) {
+
+    .searchTerm{
+        display: none;
+    }
+
+    .searchIcon{
+        font-size: 20px;
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: none;
+    }
+  }
